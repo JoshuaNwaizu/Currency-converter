@@ -2,57 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--=============== Css ===============-->
-    <link rel="stylesheet" href="style.css">
-    <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--=============== Css ===============-->
+  <link rel="stylesheet" href="style.css" />
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <title>Currency Converter</title>
+  <title>Currency Converter</title>
 </head>
+
 <body>
-<div class="wrapper container">
+  <div class="wrapper container">
     <header class="header">Currency Converter</header>
     <form action="#">
-        <div class="amount">
-            <p>Enter Amount</p>
-            <input type="text" value="1">
+      <div class="amount">
+        <p>Enter Amount</p>
+        <input type="text" value="1" />
+      </div>
+      <div class="drop__list">
+        <div class="from">
+          <p>FROM</p>
+          <div class="select__box">
+            <img src="https://flagsapi.com/US/flat/64.png" alt="flag" />
+            <select>
+              <option value="USD">USD</option>
+              <option value="NGN">NGN</option>
+              <option value="NPR">NPR</option>
+              <option value="INR">INR</option>
+              <option value="MAD">MAD</option>
+            </select>
+          </div>
         </div>
-        <div class="drop__list">
-            <div class="from">
-                <p>FROM</p>
-                <div class="select__box">
-                    <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
-                    <select> 
-                        <option value="USD">USD</option>
-                        <option value="NGN">NGN</option>
-                        <option value="NPR">NPR</option>
-                        <option value="INR">INR</option>
-                        <option value="MAD">MAD</option>
-                    </select>
-                </div>
-            </div>
-            <div class="icon"><i class="ri-arrow-left-right-fill"></i></div>
+        <div class="icon"><i class="ri-arrow-left-right-fill"></i></div>
 
-            <div class="to">
-                <p>TO</p>
-                <div class="select__box">
-                    <img src="https://flagsapi.com/NG/flat/64.png" alt="flag">
-                    <select> 
-                        <option value="NGN">NGN</option>
-                        <option value="USD">USD</option>
-                        <option value="NPR">NPR</option>
-                        <option value="INR">INR</option>
-                        <option value="MAD">MAD</option>
-                    </select>
-                </div>
-            </div>
+        <div class="to">
+          <p>TO</p>
+          <div class="select__box">
+            <img src="https://flagsapi.com/NG/flat/64.png" alt="flag" />
+            <select>
+              <option value="NGN">NGN</option>
+              <option value="USD">USD</option>
+              <option value="NPR">NPR</option>
+              <option value="INR">INR</option>
+              <option value="MAD">MAD</option>
+            </select>
+          </div>
         </div>
-        <div class="exchange__rate">1 USD =  500.16 NGN </div>
-        <button>Get exchange rate</button>
+      </div>
+      <div class="exchange__rate">1 USD = 500.16 NGN</div>
+      <button>Get exchange rate</button>
     </form>
-</div>
+  </div>
+  <script src="country-list.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

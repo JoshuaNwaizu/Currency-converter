@@ -51,14 +51,14 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(to right, #33cc33 0%, #66ff66 100%);
-    ;
+    background: #181818ea;
+
 }
 
 .wrapper {
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.57);
-    border-radius: 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 1.2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.2px);
     -webkit-backdrop-filter: blur(7.2px);
@@ -67,8 +67,82 @@ body {
     width: 370px;
     padding: 2rem;
 }
+
 .header {
     font-size: var(--big-font-size);
     font-weight: var(--font-weight-medium);
     text-align: center;
+}
+
+form {
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+}
+
+form input {
+    height: 2.5rem;
+    padding: 0 1rem;
+    border: 1px solid #999;
+}
+
+form p {
+    font-size: var(--body-font);
+    margin-bottom: .3rem;
+}
+
+form input:focus {
+    border: 2px solid #181818ea;
+    padding: 0 1.3rem;
+    transition: .4s;
+}
+
+form .drop__list {
+    margin-top: var(--mb-1-5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop__list .select__box {
+    display: flex;
+    width: 7.2rem;
+    align-items: center;
+    border-radius: 7px;
+    justify-content: center;
+    height: 2.8rem;
+    border: 1px solid #999;
+}
+
+.select__box select {
+    width: auto;
+    font-size: var(--h3-font-size);
+    margin: 0 -5px 0 5px;
+}
+
+.select__box img {
+    width: 1.6rem;
+}
+.drop__list .icon {
+    font-size: var(--h2-font-size);
+    cursor: pointer;
+    margin-top: 1.8rem;
+}
+form .exchange__rate {
+    font-size: 1.1rem;
+    margin: 1.1rem 0 2rem;
+}
+form button {
+    height: 3rem;
+    color: #fff;
+    background: #181818ea;
+    cursor: pointer;
+    font-size: 1rem;
 }
