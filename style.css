@@ -127,18 +127,35 @@ form .drop__list {
     margin: 0 -5px 0 5px;
 }
 
+select::-webkit-scrollbar {
+    width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+    background: #999;
+}
+
+select::-webkit-scrollbar-thumb {
+    background: #181818ea;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+
 .select__box img {
     width: 1.6rem;
 }
+
 .drop__list .icon {
     font-size: var(--h2-font-size);
     cursor: pointer;
     margin-top: 1.8rem;
 }
+
 form .exchange__rate {
     font-size: 1.1rem;
     margin: 1.1rem 0 2rem;
 }
+
 form button {
     height: 3rem;
     color: #fff;
